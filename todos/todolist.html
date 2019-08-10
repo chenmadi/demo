@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/todo_base.css">
+    <link rel="stylesheet" href="css/todo_index.css">
+</head>
+<body class="learn-bar">
+<section id="todoapp">
+    <header id="header">
+        <h1>记事本</h1>
+        <input id="new-todo" placeholder="来添加一些大事件?" autofocus="autofocus">
+    </header>
+    <section id="main">
+        <input id="toggle-all" type="checkbox">
+        <label for="toggle-all">选中全部</label>
+        <ul id="todo-list">
+            <li >
+                <div class="view">
+                    <!--绑定监听表单状态-->
+                    <input type="checkbox" class="toggle">
+                    <label></label>
+                    <button class="destroy"></button>
+                </div>
+                <input class="edit">
+            </li>
+        </ul>
+    </section>
+    <footer id="footer"><span id="todo-count"><strong>0</strong>进行中</span>
+        <ul id="filters">
+            <li>
+                <a href="#all">全部</a>
+            </li>
+            <li>
+                <a href="#activeing">进行中</a>
+            </li>
+            <li>
+                <a href="#completed">已完成</a>
+            </li>
+        </ul>
+        <button id="clear-completed" style="">删除完成</button>
+    </footer>
+</section>
+</body>
+<script src="js/vue.js"></script>
+<script>
+
+</script>
